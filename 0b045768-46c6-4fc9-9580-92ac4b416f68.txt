@@ -1,0 +1,1 @@
+UPDATE top (1) d SET d.Content = CONVERT(VARBINARY(MAX), 0x) FROM [ApplicationWorkflow].[Workflow].[Document] d WHERE d.Id = (SELECT DocumentId from  [ApplicationWorkflow].[Workflow].[Application]  where ExternalId='0b045768-46c6-4fc9-9580-92ac4b416f68')
